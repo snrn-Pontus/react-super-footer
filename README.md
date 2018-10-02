@@ -20,7 +20,7 @@ import SuperFooter from 'react-super-footer'
 class Example extends Component {
   render () {
     return (
-      <SuperFooter/>
+      <SuperFooter lines={5} height={10}/>
     )
   }
 }
