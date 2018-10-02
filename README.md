@@ -15,16 +15,22 @@ npm install --save react-super-footer
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-super-footer'
+import SuperFooter from 'react-super-footer'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <SuperFooter/>
     )
   }
 }
 ```
+
+| Property  | Default       | Required  | Description  |
+|----------:|--------------:|----------:|----------:|
+| lines     | 2             |     false |     number of lines to render |
+| height    | 14            |     false |     height of lines in pixels |
+| dynamic   | false         |     false |     if true, dynamically renders lines until the window height is reached  |
 
 ## License
 

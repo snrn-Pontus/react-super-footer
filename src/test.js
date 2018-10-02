@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import SuperFooter from './'
 
-describe('ExampleComponent', () => {
+describe('SuperFooter', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(SuperFooter).toBeTruthy()
   })
 })

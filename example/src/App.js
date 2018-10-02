@@ -1,13 +1,33 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
-import ExampleComponent from 'react-super-footer'
+import SuperFooter from 'react-super-footer'
+import Footer from './Footer'
 
 export default class App extends Component {
-  render () {
+  constructor(props) {
+    super(props)
+    this.state = {content: false}
+  }
+
+  componentDidMount() {
+    this.getContent()
+  }
+
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        Hello
+        {this.state.content
+          ? <div style={{'height': '500px'}}>{this.state.content}</div>
+          : <SuperFooter lines={50} height={14} dynamic={true}/>}
+        <Footer/>
       </div>
     )
+  }
+
+  getContent = () => {
+    setTimeout(() => {
+      this.setState({content: 'content'})
+    }, 3000)
   }
 }
