@@ -1,6 +1,6 @@
 {
   "name": "react-super-footer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library that adds makes sure that your footer isn&#x27;t shown before content has loaded.",
   "author": "snrn-Pontus",
   "license": "MIT",
